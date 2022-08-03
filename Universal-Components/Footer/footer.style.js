@@ -8,9 +8,124 @@ export const FooterDiv = styled.div`
     justify-content: space-between;
     padding: 50px 90px;
 
-    .footerbody {
-      width: 30%;
+    .firstClassbody {
+      width: 35%;
       color: ${({ color }) => color.MajorColor};
+      padding: 0px 11px;
+
+      .firstClassname {
+        padding: 10px 0px;
+      }
+
+      .firstClassitem {
+        padding: 10px 0px;
+        color: ${({ color }) => color.FooterTextColor};
+      }
+
+      .firstClasslinkbody {
+        color: ${({ color }) => color.FooterTextColor};
+        display: flex;
+        align-items: center;
+        padding: 15px 0px;
+        /* border: 1px solid red; */
+
+        .linkbody {
+          margin-right: 20px;
+          /* border: 1px solid green; */
+
+          .linkclass {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid green; */
+
+            .linkicon {
+              border: 1px solid ${({ color }) => color.FooterBorderColor};
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 8px 10px;
+              border-radius: 4px;
+
+              &:hover {
+                background-color: ${({ color }) => color.SectionColor};
+                border: 1px solid ${({ color }) => color.SectionColor};
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .secondClassbody {
+      width: 20%;
+      color: ${({ color }) => color.FooterTextColor};
+      padding: 0px 10px;
+
+      .secondClassname {
+        padding: 10px 0px;
+
+        h3 {
+          font-weight: 600;
+          letter-spacing: 1px;
+          line-height: 1.5rem;
+        }
+      }
+
+      .secondClasslinkbody {
+        .linkbodyText {
+          a {
+            font-size: 18px;
+
+            .linkclassText {
+              display: flex;
+              align-items: center;
+              margin: 15px 0px;
+              opacity: 0.8;
+
+              .linkiconText {
+                display: flex;
+                justify-content: center;
+                margin-right: 10px;
+              }
+
+              .linktextText {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .thirdClassbody {
+      width: 25%;
+      color: ${({ color }) => color.FooterTextColor};
+      padding: 0px 10px;
+
+      .thirdClassname {
+        padding: 10px 0px;
+
+        h3 {
+          font-weight: 600;
+          letter-spacing: 1px;
+          line-height: 1.5rem;
+        }
+      }
+
+      .thirdClassitem {
+        color: ${({ color }) => color.FooterTextColor};
+        padding: 11px 0px;
+      }
+    }
+  }
+
+  .secondlayout {
+    border-top: 1px solid ${({ color }) => color.FooterBorderColor};
+    padding: 50px 90px;
+
+    .secondlayoutname {
+      color: ${({ color }) => color.FooterTextColor};
     }
   }
 `;

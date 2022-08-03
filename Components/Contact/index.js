@@ -1,7 +1,7 @@
 import heroImage from "../../Asset/Image/aboutus.jpg";
 import CCards from "../../Universal-Components/C_Cards";
 import { CCardDiv } from "../../Universal-Components/C_Cards/cards.style";
-import Nav from "../../Universal-Components/Nav/nav";
+import Nav from "../../Universal-Components/Nav";
 import { CCardsArray } from "../../Util/Contact/CCards";
 import { NavArray } from "../../Util/Nav";
 import { ContactDiv, ContactMainDiv } from "./contact.style";
@@ -11,15 +11,26 @@ import FormArray from "../../Util/Contact/FormArr";
 import FormComponent from "../../Universal-Components/FormComponent";
 import { withTheme } from "styled-components";
 import MapComponent from "../../Universal-Components/MapComponent";
-import { FooterArray } from "../../Util/Footer";
-import FooterComponent from "../../Universal-Components/Footer";
+import { useRef } from "react";
 
 const ContactScreen = ({ theme }) => {
+  const nav = useRef();
+
+  // const navScroll = () => {
+  //   if (nav.current.onscroll > 20) {
+  //     console.log("joshua");
+  //   }
+  // };
+
+  // window.onscroll = function () {
+  //   navScroll();
+  // };
+
   return (
     <ContactMainDiv color={theme}>
       <ContactDiv bg={heroImage} color={theme}>
         <div className="contactBody">
-          <Nav navArray={NavArray} />
+          <Nav navArray={NavArray} ref={nav} />
           <div className={"header"}>
             <h3>Contact Us</h3>
           </div>
@@ -65,9 +76,6 @@ const ContactScreen = ({ theme }) => {
         </div>
         <div className={"map"}>
           <MapComponent />
-        </div>
-        <div>
-          <FooterComponent footerArray={FooterArray} />
         </div>
       </div>
     </ContactMainDiv>

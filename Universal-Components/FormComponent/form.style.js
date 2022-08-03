@@ -12,7 +12,8 @@ export const FormDiv = styled.div`
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      color: ${({ color }) => color.SecondaryColor};
+      color: ${({ color, sign }) =>
+        sign ? color.FooterTextColor : color.SecondaryColor};
       text-align: left;
       /* border: 1px solid red; */
     }
@@ -25,6 +26,7 @@ export const FormDiv = styled.div`
       border: 1px solid ${({ color }) => color.InputColorBorder};
       border-radius: 8px;
       margin-top: 5px;
+      background-color: ${({ color, sign }) => sign && color.FooterBorderColor};
 
       &:hover {
         border: 1px solid ${({ color }) => color.SectionColor};
@@ -52,7 +54,8 @@ export const FormDiv = styled.div`
 
       .formIcon {
         font-size: 20px;
-        color: ${({ color }) => color.SecondaryColor};
+        color: ${({ color, sign }) =>
+          sign ? color.FooterTextColor : color.SecondaryColor};
       }
     }
 
@@ -69,14 +72,15 @@ export const FormDiv = styled.div`
         border: none;
         outline: none;
         background-color: transparent;
-        color: ${({ color }) => color.SecondaryColor};
+        color: ${({ color, sign }) =>
+          sign ? color.FooterTextColor : color.SecondaryColor};
       }
     }
   }
 
   .submitbody {
-    padding: 15px 0px;
-    width: 50%;
+    padding: ${({ sign }) => !sign && "15px 0px"};
+    width: ${({ sign }) => (sign ? "100%" : "50%")};
 
     .submit {
       width: 100%;

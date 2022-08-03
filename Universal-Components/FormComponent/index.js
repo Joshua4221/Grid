@@ -5,9 +5,9 @@ import SubmitField from "../../Mono-Component/Input/SubmitField";
 import Textarea from "../../Mono-Component/Input/TextArea";
 import { withTheme } from "styled-components";
 
-const FormComponent = ({ formArray, theme, HandleChange }) => {
+const FormComponent = ({ formArray, theme, HandleChange, sign }) => {
   return (
-    <FormDiv color={theme}>
+    <FormDiv color={theme} sign={sign}>
       {formArray.map((item, key) => (
         <div key={key} className={`${item.classbody}`}>
           <label>{item.label}</label>

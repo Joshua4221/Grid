@@ -12,7 +12,7 @@ export const FooterArray = [
       {
         image: Image,
         text: "Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.",
-        classbody: "firstClassbody footerbody",
+        classbody: "firstClassbody",
         classname: "firstClassname",
         classitem: "firstClassitem",
         linkarray: [
@@ -49,8 +49,9 @@ export const FooterArray = [
       },
       {
         header: "Company",
-        classbody: "secondClassbody footerbody",
+        classbody: "secondClassbody",
         classname: "secondClassname",
+        classlinkbody: "secondClasslinkbody",
         linkarray: [
           {
             linkIcon: FiChevronRight,
@@ -59,6 +60,7 @@ export const FooterArray = [
             classbody: "linkbodyText",
             classname: "linkclassText",
             classlinkicon: "linkiconText",
+            classicon: "iconlink",
             classitem: "linktextText",
           },
           {
@@ -68,6 +70,7 @@ export const FooterArray = [
             classbody: "linkbodyText",
             classname: "linkclassText",
             classlinkicon: "linkiconText",
+            classicon: "iconlink",
             classitem: "linktextText",
           },
           {
@@ -77,6 +80,7 @@ export const FooterArray = [
             classbody: "linkbodyText",
             classname: "linkclassText",
             classlinkicon: "linkiconText",
+            classicon: "iconlink",
             classitem: "linktextText",
           },
           {
@@ -86,14 +90,16 @@ export const FooterArray = [
             classbody: "linkbodyText",
             classname: "linkclassText",
             classlinkicon: "linkiconText",
+            classicon: "iconlink",
             classitem: "linktextText",
           },
         ],
       },
       {
         header: "Usefull Links",
-        classbody: "thirdClassbody footerbody",
-        classname: "thirdClassname",
+        classbody: "secondClassbody",
+        classname: "secondClassname",
+        classlinkbody: "secondClasslinkbody",
         linkarray: [
           {
             linkIcon: FiChevronRight,
@@ -102,6 +108,7 @@ export const FooterArray = [
             classbody: "linkbodyText",
             classname: "linkclassText",
             classlinkicon: "linkiconText",
+            classicon: "iconlink",
             classitem: "linktextText",
           },
           {
@@ -111,16 +118,17 @@ export const FooterArray = [
             classbody: "linkbodyText",
             classname: "linkclassText",
             classlinkicon: "linkiconText",
+            classicon: "iconlink",
             classitem: "linktextText",
           },
         ],
       },
       {
         header: "Newsletter",
-        classbody: "thirdClassbody footerbody",
+        classbody: "thirdClassbody",
         classname: "thirdClassname",
         text: "Sign up and receive the latest tips via email.",
-        classitem: "secondClassitem",
+        classitem: "thirdClassitem",
         form: [
           {
             label: "Write your email *",
@@ -133,7 +141,7 @@ export const FooterArray = [
           },
           {
             type: "submit",
-            value: "Send Message",
+            value: "Subscribe",
             classbody: "submitbody",
             classname: "submit",
           },

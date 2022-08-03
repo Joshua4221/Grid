@@ -18,30 +18,38 @@ const FooterComponent = ({ footerArray, theme }) => {
           <div className={`${item.classname}`}>
             {item?.section?.map((item, key) => (
               <div key={key} className={`${item.classbody}`}>
-                {item.image ? (
-                  <div className={`${item.classname}`}>
-                    <Image
-                      src={item.image}
-                      alt={"logo"}
-                      // width={"100"}
-                      // height={"50"}
-                      placeholder="blur"
-                      priority
-                      blurDataURL
-                    />
-                  </div>
-                ) : // :
-                //  item.header ? (
-                //   <div className={`${item.classname}`}>
-                //     <h3>{item.header}</h3>
-                //   </div>
-                // )
-                item.form ? (
-                  <div className={`${item.classname}`}>
-                    <FormComponent formArray={item.form} />
-                  </div>
-                ) : (
-                  item.linkarray && (
+                <div>
+                  {item.image ? (
+                    <div className={`${item.classname}`}>
+                      <Image
+                        src={item.image}
+                        alt={"logo"}
+                        // width={"100"}
+                        // height={"50"}
+                        placeholder="blur"
+                        priority
+                        blurDataURL
+                      />
+                    </div>
+                  ) : (
+                    item.header && (
+                      <div className={`${item.classname}`}>
+                        <h3>{item.header}</h3>
+                      </div>
+                    )
+                  )}
+                </div>
+
+                <div className={`${item.classitem}`}>
+                  <p>{item.text}</p>
+                </div>
+
+                <div>
+                  {item.form ? (
+                    <div className={`${item.classname}`}>
+                      <FormComponent formArray={item.form} sign={"footer"} />
+                    </div>
+                  ) : item.linkarray ? (
                     <div className={`${item.classlinkbody}`}>
                       {console.log(item.linkarray)}
                       {item.linkarray?.map((items, key) => (
@@ -50,10 +58,12 @@ const FooterComponent = ({ footerArray, theme }) => {
                             <a>
                               <div className={`${items.classname}`}>
                                 <div className={`${items.classlinkicon}`}>
-                                  <items.linkIcon />
+                                  <items.linkIcon
+                                    className={`${items.classicon}`}
+                                  />
                                 </div>
                                 <div className={`${items.classitem}`}>
-                                  <h4>{items.linkText}</h4>
+                                  <p>{items.linkText}</p>
                                 </div>
                               </div>
                             </a>
@@ -61,11 +71,11 @@ const FooterComponent = ({ footerArray, theme }) => {
                         </div>
                       ))}
                     </div>
-                  )
-                )}
-
-                <div className={`${item.classitem}`}>
-                  <h4>{item.text}</h4>
+                  ) : (
+                    <div className={`${item.classitem}`}>
+                      <h4>{item.text}</h4>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
