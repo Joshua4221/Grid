@@ -1,11 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { withTheme } from "styled-components";
 import { NavDiv } from "./nav.style";
 
 const Nav = ({ navArray, theme }) => {
+  const [show, setShow] = useState(false);
+
+  const HandleShow = () => {
+    setShow(!show);
+  };
+
   return (
-    <NavDiv color={theme}>
+    <NavDiv color={theme} show={show}>
       {navArray.map((item, key) => (
         <div key={key} className={`${item.classMain}`}>
           {item.section.map((item, key) => (
@@ -23,11 +30,19 @@ const Nav = ({ navArray, theme }) => {
                   />
                   <div></div>
                 </div>
+              ) : item.icon ? (
+                <div className={`${item.classname}`} onClick={HandleShow}>
+                  <item.icon className={`${item.classItem}`} />
+                </div>
               ) : (
                 item.link && (
-                  <div>
+                  <div className={`${item.classname}`}>
                     <Link href={item.link}>
-                      <a>{item.linkText}</a>
+                      <a>
+                        <div className={`${item.classItem}`}>
+                          <p>{item.linkText}</p>
+                        </div>
+                      </a>
                     </Link>
                   </div>
                 )

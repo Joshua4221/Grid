@@ -7,7 +7,10 @@ export const CCardDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 30px 100px;
+  text-align: center;
 
   .ccardbody {
     width: 30%;
@@ -69,5 +72,25 @@ export const CCardDiv = styled.div`
         }
       }
     }
+
+    @media (max-width: 950px) {
+      width: 50%;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 950px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 765px) {
+    padding: 30px 10px;
+  }
+
+  @media (max-width: 414px) {
+    padding: 30px 10px;
   }
 `;

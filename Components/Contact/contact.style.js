@@ -16,6 +16,10 @@ export const ContactMainDiv = styled.div`
       .image {
         height: 100vh;
       }
+
+      @media (max-width: 766px) {
+        width: 100%;
+      }
     }
 
     .formbody {
@@ -33,35 +37,17 @@ export const ContactMainDiv = styled.div`
           font-size: 24px;
         }
       }
-    }
-  }
-`;
 
-export const ContactDiv = styled.div`
-  background-image: url(${({ bg }) => bg.src});
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  /* opacity: 0.9; */
-  height: 65vh;
-  margin-bottom: 90px;
-
-  .contactBody {
-    background-color: rgb(22, 28, 45, 0.7);
-    height: 100%;
-
-    .header {
-      /* border: 1px solid red; */
-      display: flex;
-      justify-content: center;
-      height: 65%;
-
-      h3 {
-        margin: auto;
-        color: ${({ color }) => color.MajorColor};
-        font-size: 42px;
-        font-weight: 500;
+      @media (max-width: 766px) {
+        width: 100%;
+        padding: 20px;
       }
+    }
+
+    @media (max-width: 766px) {
+      display: block;
+      /* flex-direction: column; */
+      padding: 30px 10px;
     }
   }
 `;

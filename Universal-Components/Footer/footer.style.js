@@ -6,6 +6,7 @@ export const FooterDiv = styled.div`
   .firstlayoutname {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 50px 90px;
 
     .firstClassbody {
@@ -55,6 +56,10 @@ export const FooterDiv = styled.div`
           }
         }
       }
+
+      @media (max-width: 920px) {
+        width: 100%;
+      }
     }
 
     .secondClassbody {
@@ -96,6 +101,18 @@ export const FooterDiv = styled.div`
           }
         }
       }
+
+      @media (max-width: 920px) {
+        width: 30%;
+      }
+
+      @media (max-width: 720px) {
+        width: 50%;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
 
     .thirdClassbody {
@@ -117,6 +134,23 @@ export const FooterDiv = styled.div`
         color: ${({ color }) => color.FooterTextColor};
         padding: 11px 0px;
       }
+
+      @media (max-width: 920px) {
+        width: 30%;
+      }
+
+      @media (max-width: 720px) {
+        width: 60%;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      /* display: block; */
+      padding: 50px 10px;
     }
   }
 
@@ -126,6 +160,11 @@ export const FooterDiv = styled.div`
 
     .secondlayoutname {
       color: ${({ color }) => color.FooterTextColor};
+    }
+
+    @media (max-width: 500px) {
+      text-align: center;
+      padding: 50px 10px;
     }
   }
 `;

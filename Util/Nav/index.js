@@ -1,4 +1,5 @@
 import CompanyLogo from "../../Asset/Icons/logo-light.png";
+import { FiMenu } from "react-icons/fi";
 
 export const NavArray = [
   {
@@ -9,28 +10,43 @@ export const NavArray = [
     classMain: "secondLayout",
     section: [
       {
-        text: "Home",
-        classBody: "secondLayoutBody",
-        classname: "secondLayoutClass",
-        classItem: "secondLayoutItem",
+        link: "/",
+        linkText: "Home",
+        classBody: "secondLayoutBodylink",
+        classname: "secondLayoutClasslink",
+        classItem: "secondLayoutItemlink",
       },
       {
-        text: "Service",
-        classBody: "secondLayoutBody",
-        classname: "secondLayoutClass",
-        classItem: "secondLayoutItem",
+        link: "/services",
+        linkText: "Services",
+        classBody: "secondLayoutBodylink",
+        classname: "secondLayoutClasslink",
+        classItem: "secondLayoutItemlink",
       },
       {
-        text: "Contact",
-        classBody: "secondLayoutBody",
-        classname: "secondLayoutClass",
-        classItem: "secondLayoutItem",
+        link: "/contact",
+        linkText: "Contact",
+        classBody: "secondLayoutBodylink",
+        classname: "secondLayoutClasslink",
+        classItem: "secondLayoutItemlink",
       },
       {
-        text: "About",
-        classBody: "secondLayoutBody",
-        classname: "secondLayoutClass",
-        classItem: "secondLayoutItem",
+        link: "/about",
+        linkText: "About us",
+        classBody: "secondLayoutBodylink",
+        classname: "secondLayoutClasslink",
+        classItem: "secondLayoutItemlink",
+      },
+    ],
+  },
+  {
+    classMain: "thirdLayout",
+    section: [
+      {
+        icon: FiMenu,
+        classBody: "thirdLayoutBodyicon",
+        classname: "thirdLayoutClassicon",
+        classItem: "thirdLayoutItemicon",
       },
     ],
   },
