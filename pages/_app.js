@@ -7,6 +7,7 @@ import FooterComponent from "../Universal-Components/Footer";
 import { FooterArray } from "../Util/Footer";
 import Nav from "../Universal-Components/Nav";
 import { NavArray } from "../Util/Nav";
+import Home from ".";
 
 function MyApp({ Component, pageProps }) {
   const [state, setState] = useState(false);
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={current}>
       <GlobalStyles />
-      <Nav navArray={NavArray} />
+      <Nav navArray={NavArray} component={`${Component === Home && "home"}`} />
       <Component {...pageProps} onclick={HandleThemeProvider} />
       <FooterComponent footerArray={FooterArray} />
     </ThemeProvider>

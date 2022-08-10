@@ -4,7 +4,7 @@ import { useState } from "react";
 import { withTheme } from "styled-components";
 import { NavDiv } from "./nav.style";
 
-const Nav = ({ navArray, theme }) => {
+const Nav = ({ navArray, theme, component }) => {
   const [show, setShow] = useState(false);
 
   const HandleShow = () => {
@@ -12,7 +12,7 @@ const Nav = ({ navArray, theme }) => {
   };
 
   return (
-    <NavDiv color={theme} show={show}>
+    <NavDiv color={theme} show={show} component={component}>
       {navArray.map((item, key) => (
         <div key={key} className={`${item.classMain}`}>
           {item.section.map((item, key) => (
