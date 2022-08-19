@@ -19,7 +19,7 @@ const HomePage = ({ theme }) => {
     <HomeDiv color={theme}>
       <div className="heroSection">
         <div className={"heroSectionDetails"}>
-          <h3>We Care About any IT Solution</h3>
+          <h3>SOFTWARE DEVELOPMENT AND DIGITAL SOLUTIONS</h3>
           <p>
             Proactively coordinate quality quality vectors vis-a-vis supply
             chains. Quickly engage client-centric web services.
