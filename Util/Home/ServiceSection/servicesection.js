@@ -5,20 +5,24 @@ import Tab3 from "../../../Asset/Image/tab_img3.png";
 
 export const ServiceSectionContentArrayOne = {
   image: Tab1,
-  header: "We are working with 15 years exprience",
-  paragraph: `Continually network effective bandwidth whereas goal-oriented schemas. Intrinsicly incentivize corporate synergy with accurate task bricks-and-clicks leadership skills.`,
+  header: "Responsive Technology",
+  paragraph: `We take care of all steps of your application development journey. We build every part of your app with a complete software development approach, from the hidden back-end functions to the UI/UX design. This way, we can assure you that all features you need for your business will be working perfectly in all device sizes.`,
   sectionBodyArray: [
     {
       icon: FaCheck,
-      text: "Digital Conferance",
+      text: "Speed",
     },
     {
       icon: FaCheck,
-      text: "Great Speak",
+      text: "Responsiveness",
     },
     {
       icon: FaCheck,
-      text: "Event Mangement",
+      text: "Aesthetic Prowess",
+    },
+    {
+      icon: FaCheck,
+      text: "Maintainability",
     },
   ],
   linkText: "Know More About Us",
@@ -27,20 +31,21 @@ export const ServiceSectionContentArrayOne = {
 
 export const ServiceSectionContentArrayTwo = {
   image: Tab2,
-  header: "Automation Power",
-  paragraph: `Continually network effective bandwidth whereas goal-oriented schemas. Intrinsicly incentivize corporate synergy with accurate task bricks-and-clicks leadership skills.`,
+  header: "High-End Mobile Application Services",
+  paragraph: `Our mobile application development service can meet any of your requirements.
+Therefore, we can build software for your customers, create support tools for your internal processes, work with web development teams to develop hybrid tools, or come up with a complete mobile strategy for your brand.`,
   sectionBodyArray: [
     {
       icon: FaCheck,
-      text: "Digital Conferance",
+      text: "iOS Apps",
     },
     {
       icon: FaCheck,
-      text: "Great Speak",
+      text: "Android Apps",
     },
     {
       icon: FaCheck,
-      text: "Event Mangement",
+      text: "Cross-platform Apps",
     },
   ],
   linkText: "Know More About Us",
@@ -50,19 +55,19 @@ export const ServiceSectionContentArrayTwo = {
 export const ServiceSectionContentArrayThree = {
   image: Tab3,
   header: "Advanced Technology",
-  paragraph: `Continually network effective bandwidth whereas goal-oriented schemas. Intrinsicly incentivize corporate synergy with accurate task bricks-and-clicks leadership skills.`,
+  paragraph: `We create products and product designs that logically flows from one step to the next. Our designs focuses on quality and visuals of the end product, and uses hi-fi models as prototypes..`,
   sectionBodyArray: [
     {
       icon: FaCheck,
-      text: "Digital Conferance",
+      text: "Digital aesthetic",
     },
     {
       icon: FaCheck,
-      text: "Great Speak",
+      text: "Quality",
     },
     {
       icon: FaCheck,
-      text: "Event Mangement",
+      text: "Flexibility",
     },
   ],
   linkText: "Know More About Us",
