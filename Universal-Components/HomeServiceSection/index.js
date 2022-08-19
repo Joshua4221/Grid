@@ -10,8 +10,8 @@ const HomeServiceSection = ({ theme }) => {
       <div className={"HomeServiceHeader"}>
         <h2>Services We Provide</h2>
         <p>
-          Credibly grow premier ideas rather than bricks-and-clicks strategic
-          theme areas distributed for stand-alone web-readiness.
+          With the most professional and advanced resources, we bring
+          satisfactory outcome for your business.
         </p>
       </div>
       <div>
