@@ -38,10 +38,13 @@ const ServiceSection = ({
   return (
     <ServiceSectionDiv color={theme}>
       <div className={"serviceSectionOne"}>
-        <h2>We Build any Kind of Technology</h2>
+        <h2>Who We Are...</h2>
         <p className={"ServiceDetails"}>
-          Credibly grow premier ideas rather than bricks-and-clicks strategic
-          theme areas distributed for stand-alone web-readiness.
+          We are a client-centred software development company focused on
+          meeting your specific digital needs. Our software products stand out
+          based on their efficiency, scalability, and cost effectiveness. They
+          are customized for every business size and are fast, secure,
+          efficiently scalable, easily manageable, and undeniably powerful.
         </p>
         <div className={"SectionOneServices"}>
           {ServiceSectionArray?.map((item, key) => (
@@ -50,8 +53,7 @@ const ServiceSection = ({
               className={`ServiceOneDetails ${
                 item === sectionShow && "active"
               }`}
-              onClick={() => HandleSectionShow(item)}
-            >
+              onClick={() => HandleSectionShow(item)}>
               <div className={"SectionOneServiceIcon"}>
                 <item.icon className={"SectionIcon"} />
               </div>
