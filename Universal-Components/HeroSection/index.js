@@ -9,11 +9,12 @@ const HeroSection = ({ bg, theme, heroText }) => {
         <div className={"header"}>
           <h3>{heroText}</h3>
         </div>
+
         <div className={"heroDetails"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
-            viewBox="100 200 1220 160"
+            viewBox="100 250 1250 120"
           >
             {/* #0099ff */}
             <path

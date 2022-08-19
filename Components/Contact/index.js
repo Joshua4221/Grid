@@ -40,8 +40,6 @@ const ContactScreen = ({ theme }) => {
               placeholder="blur"
               priority
               blurDataURL
-              // width={"900px"}
-              // height={"800px"}
               layout={"responsive"}
               objectFit="cover"
               className={"image"}

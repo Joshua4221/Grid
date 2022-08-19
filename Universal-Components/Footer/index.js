@@ -51,7 +51,6 @@ const FooterComponent = ({ footerArray, theme }) => {
                     </div>
                   ) : item.linkarray ? (
                     <div className={`${item.classlinkbody}`}>
-                      {console.log(item.linkarray)}
                       {item.linkarray?.map((items, key) => (
                         <div key={key} className={`${items.classbody}`}>
                           <Link href={items.link}>

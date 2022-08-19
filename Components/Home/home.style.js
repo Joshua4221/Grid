@@ -7,6 +7,7 @@ export const HomeDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0px 100px;
     font-family: "Poppins", sans-serif;
 
@@ -28,48 +29,45 @@ export const HomeDiv = styled.div`
         opacity: 0.5;
         padding: 20px 0px;
       }
+
+      @media screen and (max-width: 950px) {
+        width: 100%;
+      }
     }
 
     .heroSectionGraphics {
       width: 50%;
-      position: relative;
       padding: 0px 20px;
-
-      .graphicIconOne {
-        position: absolute;
-        top: 27rem;
-        left: 5rem;
-      }
 
       .graphicsImage {
         z-index: 3;
       }
 
-      .graphicIconTwo {
-        position: absolute;
-        top: 7rem;
-        left: 28rem;
+      @media screen and (max-width: 950px) {
+        width: 100%;
       }
+    }
 
-      .graphicsBoxOne {
-        background: ${({ color }) => color.FooterColor};
-        width: 150px;
-        height: 150px;
-        position: absolute;
-        top: 21rem;
-        border-radius: 50%;
-        z-index: 5;
-      }
+    @media screen and (max-width: 1200px) {
+      padding: 0px 30px;
+    }
 
-      .graphicsBoxTwo {
-        background-color: ${({ color }) => color.MajorColor};
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        position: absolute;
-        top: 10rem;
-        left: 31rem;
-        z-index: 5;
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+    }
+  }
+
+  .ourTech {
+    text-align: center;
+    padding: 30px 0px;
+
+    .ourTechHeader {
+      h2 {
+        font-family: "Poppins", sans-serif;
+        color: ${({ color }) => color.PrimColor};
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 10px 0px;
       }
     }
   }

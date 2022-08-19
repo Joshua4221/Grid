@@ -12,6 +12,7 @@ export const HeroSectionDiv = styled.div`
   .heroBody {
     background-color: rgb(22, 28, 45, 0.7);
     height: 100%;
+    /* position: relative; */
 
     .header {
       /* border: 1px solid red; */
@@ -30,11 +31,15 @@ export const HeroSectionDiv = styled.div`
     }
 
     .heroDetails {
+      /* position: absolute; */
+      /* top: 2rem; */
+
       svg {
-        height: 15rem;
+        z-index: 100;
+        height: 19rem;
 
         @media (max-width: 400px) {
-          height: 16rem;
+          /* height: 10rem; */
         }
       }
     }

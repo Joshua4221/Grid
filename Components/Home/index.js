@@ -1,9 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import { HomeDiv } from "./home.style";
-import HeroImage from "../../Asset/Image/banner_image.png";
-import subPortion from "../../Asset/Image/banner_dot.png";
+import HeroImage from "../../Asset/Image/gridheroSection2.png";
 import { withTheme } from "styled-components";
+import ServiceSection from "../../Universal-Components/ServiceSection";
+import { ServiceSectionArray } from "../../Util/Home/ServiceSection";
+import {
+  ServiceSectionContentArrayOne,
+  ServiceSectionContentArrayTwo,
+  ServiceSectionContentArrayThree,
+} from "../../Util/Home/ServiceSection/servicesection";
+import HomeServiceSection from "../../Universal-Components/HomeServiceSection";
+import Technologies from "../../Universal-Components/Technologies";
+import { TechnologiesArray } from "../../Util/Home/Technologies";
 
 const HomePage = ({ theme }) => {
   return (
@@ -17,23 +26,37 @@ const HomePage = ({ theme }) => {
           </p>
         </div>
         <div className={"heroSectionGraphics"}>
-          <div className={"graphicIconOne"}>
-            <Image src={subPortion} alt={""} />
-          </div>
           <div>
             <Image
               src={HeroImage}
               alt={""}
-              // layout={"responsive"}
+              layout={"responsive"}
+              placeholder={"blur"}
+              blurDataURL
+              priority
               objectFit="cover"
               className={"graphicsImage"}
             />
           </div>
-          <div className={"graphicIconTwo"}>
-            <Image src={subPortion} alt={""} />
-          </div>
-          <span className={"graphicsBoxOne"}></span>
-          <span className={"graphicsBoxTwo"}></span>
+        </div>
+      </div>
+      <div>
+        <ServiceSection
+          ServiceSectionArray={ServiceSectionArray}
+          ServiceSectionContentArrayOne={ServiceSectionContentArrayOne}
+          ServiceSectionContentArrayTwo={ServiceSectionContentArrayTwo}
+          ServiceSectionContentArrayThree={ServiceSectionContentArrayThree}
+        />
+      </div>
+      <div>
+        <HomeServiceSection />
+      </div>
+      <div className={"ourTech"}>
+        <div className={"ourTechHeader"}>
+          <h2>Our Technologies</h2>
+        </div>
+        <div>
+          <Technologies techIconArray={TechnologiesArray} />
         </div>
       </div>
     </HomeDiv>

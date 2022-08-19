@@ -14,20 +14,22 @@ export const CCardDiv = styled.div`
 
   .ccardbody {
     width: 30%;
-    text-align: center;
+    text-align: ${({ about }) => (about ? "left" : "center")};
     color: ${({ color }) => color.SecondaryColor};
-    /* border: 1px solid red; */
-    padding: 20px 10px;
+    padding: ${({ about }) => (about ? "20px 25px" : "20px 10px")};
+    border-radius: 20px;
+    margin: 10px 5px;
+    box-shadow: ${({ about }) =>
+      about && `0px 3px 6px 0px rgba(0, 0, 0, 0.151)`};
 
     &:hover {
       box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.151);
-      border-radius: 20px;
     }
 
     .ccardIconbody {
       background-color: ${({ color }) => color.BorderColor};
       width: 80px;
-      margin: 20px auto;
+      margin: ${({ about }) => (about ? "20px 0px" : "20px auto")};
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.151);
@@ -41,8 +43,8 @@ export const CCardDiv = styled.div`
     }
 
     .ccardDetails {
-      width: 80%;
-      margin: 0px auto;
+      width: ${({ about }) => (about ? "100%" : "80%")};
+      margin: ${({ about }) => (about ? "0px" : "0px auto")};
 
       h3 {
         padding: 10px 2px;
@@ -74,7 +76,7 @@ export const CCardDiv = styled.div`
     }
 
     @media (max-width: 950px) {
-      width: 50%;
+      width: 45%;
     }
 
     @media (max-width: 600px) {

@@ -1,15 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { withTheme } from "styled-components";
 import { NavDiv } from "./nav.style";
 
 const Nav = ({ navArray, theme, component }) => {
   const [show, setShow] = useState(false);
 
-  const HandleShow = () => {
+  const HandleShow = useCallback(() => {
     setShow(!show);
-  };
+  }, [show]);
+
+  const HandleClick = useCallback(() => {
+    setShow(false);
+  }, []);
 
   return (
     <NavDiv color={theme} show={show} component={component}>
@@ -36,7 +40,7 @@ const Nav = ({ navArray, theme, component }) => {
                 </div>
               ) : (
                 item.link && (
-                  <div className={`${item.classname}`}>
+                  <div className={`${item.classname}`} onClick={HandleClick}>
                     <Link href={item.link}>
                       <a>
                         <div className={`${item.classItem}`}>
