@@ -20,12 +20,8 @@ const AboutPage = ({ theme }) => {
       <div className={"teambody"}>
         <div className={"teambody-header"}>
           <h5>our Team</h5>
-          <h2>The People Behind Quiety</h2>
-          <p className={"teambody-para"}>
-            Intrinsicly strategize cutting-edge before interoperable
-            applications incubate extensive expertise through integrated
-            intellectual capital.
-          </p>
+          <h2>The People Behind BricksLab</h2>
+          <p className={"teambody-para"}></p>
         </div>
         <div>
           <AboutProfile aboutArray={AboutProfileArray} />

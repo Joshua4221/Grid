@@ -26,7 +26,7 @@ const AboutProfile = ({ aboutArray, theme }) => {
             <div className={"aboutprofilelinkbody"}>
               {item.linkarray.map((item, key) => (
                 <div key={key} className={"aboutprofilelink"}>
-                  <Link href={item.link}>
+                  <Link href={`${item.link}`}>
                     <a>
                       <div className={"aboutprofilelinkiconbody"}>
                         <item.linkicon className={"aboutprofilelinkicon"} />

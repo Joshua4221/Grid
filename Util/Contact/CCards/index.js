@@ -5,22 +5,18 @@ export const CCardsArray = [
   {
     icon: FiPhone,
     header: "Phone",
-    paragraph:
-      "The phrasal sequence of the is now so that many campaign and benefit",
-    contact: "+152 534-468-854",
+    paragraph: "Feel free to reach out to us anytime",
+    contact: "+234 813-569-6829",
   },
   {
     icon: HiOutlineMail,
     header: "Email",
-    paragraph:
-      "The phrasal sequence of the is now so that many campaign and benefit",
-    contact: "contact@example.com",
+    contact: "brickslab.tech@gmail.com",
   },
   {
     icon: HiOutlineLocationMarker,
     header: "Location",
-    paragraph:
-      "The phrasal sequence of the is now so that many campaign and benefit",
+    paragraph: "Zone 6, 4 Kinshasha St, Wuse 900286, Abuja",
     contact: "View on Google map",
   },
 ];
