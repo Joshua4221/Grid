@@ -18,10 +18,12 @@ const ServicesPage = ({ theme }) => {
         </div>
         <div>
           <div className={"ServiceConnect"}>
-            <h2>{`Do you have digital project? Let's talk.`}</h2>
+            <h2>{`Do you have digital project?`}</h2>
+            <h2>{`Let's talk.`}</h2>
             <p className={"ServiceContent"}>
-              Start working with Techwind that can provide everything you need
-              to generate awareness, drive traffic, connect.
+              We build every BRICK of your project with latest technology in the
+              industry. Multi-factor authentification with end-to-end
+              database-server encription assured.
             </p>
             <button className={"ServiceLink"}>
               <div className={"ServiceLinkBody"}>

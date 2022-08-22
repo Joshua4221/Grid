@@ -21,7 +21,7 @@ const HomePage = ({ theme }) => {
         <div className={"heroSectionDetails"}>
           <h3>SOFTWARE DEVELOPMENT AND DIGITAL SOLUTIONS</h3>
           <p>
-            Let GridLab help you along your digital transformation journey. We
+            Let BricksLab help you along your digital transformation journey. We
             give the best with our award winning AI driven enterprise solutions.
           </p>
         </div>

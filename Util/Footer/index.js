@@ -11,7 +11,7 @@ export const FooterArray = [
     section: [
       {
         image: Image,
-        text: "Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect.",
+        text: "BricksLab can provide everything you need to generate awareness, drive traffic, connect.",
         classbody: "firstClassbody",
         classname: "firstClassname",
         classitem: "firstClassitem",
@@ -152,6 +152,6 @@ export const FooterArray = [
   {
     classmain: "secondlayout",
     classname: "secondlayoutname",
-    text: "© 2022 Techwind.| All Rights Reserved. | 2021-2022",
+    text: "© 2022 BricksLab.| All Rights Reserved. | 2021-2022",
   },
 ];
