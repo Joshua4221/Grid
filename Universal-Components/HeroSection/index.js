@@ -4,7 +4,7 @@ import { HeroSectionDiv } from "./hero.style";
 import useWindowDimensions from "../../hooks/useWindowDimension";
 
 const HeroSection = ({ bg, theme, heroText }) => {
-  const { width, height } = useWindowDimensions();
+  const width = useWindowDimensions();
 
   return (
     <HeroSectionDiv bg={bg} color={theme}>
