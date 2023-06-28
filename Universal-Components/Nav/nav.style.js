@@ -11,6 +11,11 @@ export const NavDiv = styled.div`
   padding: 10px 90px;
   position: absolute;
   /* border: 1px solid #fff; */
+  background-color: ${({ color, component }) =>
+    component === "home" && color.HeroGeneral};
+  box-shadow: ${({ component }) =>
+    component === "home" && "0px 0px 8px 4px #00000063"};
+  position: ${({ component }) => component === "home" && "fixed"};
 
   .firstLayoutBody {
     padding: 0px 10px;

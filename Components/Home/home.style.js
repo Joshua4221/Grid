@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HomeDiv = styled.div`
   .heroSection {
     background-color: #e8effe;
-    height: 120vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,17 +16,18 @@ export const HomeDiv = styled.div`
       padding: 0px 20px;
 
       h3 {
-        font-size: 46px;
+        font-size: 80px;
         font-weight: 900;
         font-style: normal;
+        line-height: 95px;
         color: ${({ color }) => color.HeroGeneral};
       }
 
       p {
-        font-weight: 400;
-        font-size: 19px;
+        font-weight: 600;
+        font-size: 22px;
         letter-spacing: 1px;
-        opacity: 0.5;
+        opacity: 0.7;
         padding: 20px 0px;
       }
 

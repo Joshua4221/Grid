@@ -13,6 +13,7 @@ import {
 import HomeServiceSection from "../../Universal-Components/HomeServiceSection";
 import Technologies from "../../Universal-Components/Technologies";
 import { TechnologiesArray } from "../../Util/Home/Technologies";
+import WhyUsSection from "./whyUs";
 
 const HomePage = ({ theme }) => {
   return (
@@ -47,6 +48,9 @@ const HomePage = ({ theme }) => {
           ServiceSectionContentArrayTwo={ServiceSectionContentArrayTwo}
           ServiceSectionContentArrayThree={ServiceSectionContentArrayThree}
         />
+      </div>
+      <div>
+        <WhyUsSection />
       </div>
       <div>
         <HomeServiceSection />
