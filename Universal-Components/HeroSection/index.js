@@ -18,13 +18,17 @@ const HeroSection = ({ bg, theme, heroText }) => {
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
             viewBox={`${
-              typeof window !== "undefined" && width > 550 ? "100" : "70"
-            } ${typeof window !== "undefined" && width > 550 ? "250" : "220"} ${
-              typeof window !== "undefined" && width > 560 ? "1250" : "1000"
+              typeof window !== "undefined" && width.width > 550 ? "100" : "70"
             } ${
-              typeof window !== "undefined" && width > 900
+              typeof window !== "undefined" && width.width > 550 ? "250" : "220"
+            } ${
+              typeof window !== "undefined" && width.width > 560
+                ? "1250"
+                : "1000"
+            } ${
+              typeof window !== "undefined" && width.width > 900
                 ? "40"
-                : width > 700
+                : width.width > 700
                 ? "25"
                 : "0.2"
             }`}
