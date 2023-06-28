@@ -22,13 +22,13 @@ const HeroSection = ({ bg, theme, heroText }) => {
               (width.width > 550 ? "100" : "70")
             } ${
               typeof window !== "undefined" &&
-              (width.width > 550 ? "250" : "220")
+              (width.width > 550 ? "245" : width.width > 360 ? "200" : "160")
             } ${
               typeof window !== "undefined" &&
-              (width.width > 560 ? "1250" : "1000")
+              (width.width > 550 ? "1250" : width.width > 360 ? "1350" : "1330")
             } ${
               typeof window !== "undefined" &&
-              (width.width > 900 ? "40" : width.width > 700 ? "25" : "0.2")
+              (width.width > 900 ? "40" : width.width > 700 ? "25" : "0.1")
             }`}
           >
             <path

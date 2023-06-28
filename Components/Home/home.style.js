@@ -21,6 +21,10 @@ export const HomeDiv = styled.div`
         font-style: normal;
         line-height: 95px;
         color: ${({ color }) => color.HeroGeneral};
+
+        @media screen and (max-width: 950px) {
+          font-size: 60px;
+        }
       }
 
       p {
@@ -55,6 +59,8 @@ export const HomeDiv = styled.div`
 
     @media screen and (max-width: 950px) {
       flex-direction: column;
+      height: unset;
+      padding-top: 100px;
     }
   }
 
