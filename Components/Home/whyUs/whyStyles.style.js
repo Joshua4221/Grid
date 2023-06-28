@@ -49,6 +49,7 @@ export const WhyDiv = styled.div`
     .whyus__bottom {
       width: 100%;
       margin-top: 20px;
+      padding: 0px 30px;
       display: flex;
       flex-wrap: wrap;
 

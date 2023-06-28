@@ -39,11 +39,7 @@ const WhyUsSection = ({ theme }) => {
               className="whyus__bottom__left__image"
             />
           </div>
-          <div
-            className="whyus__bottom__right"
-            data-aos="fade-left"
-            data-aos-duration="3000"
-          >
+          <div className="whyus__bottom__right">
             <div className="whyus__bottom__right__container">
               <div className="whyus__bottom__right__content_wrapper">
                 <div className="whyus__bottom__right__card">

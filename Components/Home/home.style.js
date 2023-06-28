@@ -42,6 +42,7 @@ export const HomeDiv = styled.div`
         letter-spacing: 1px;
         opacity: 0.7;
         padding: 20px 0px;
+        color: ${({ color }) => color.HeroGeneral};
       }
 
       @media screen and (max-width: 950px) {
