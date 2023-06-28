@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { HomeDiv } from "./home.style";
-import HeroImage from "../../Asset/Image/gridheroSection2.png";
+import HeroImage from "../../Asset/Image/gridheroSection2.webp";
 import { withTheme } from "styled-components";
 import ServiceSection from "../../Universal-Components/ServiceSection";
 import { ServiceSectionArray } from "../../Util/Home/ServiceSection";

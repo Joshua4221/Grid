@@ -1,7 +1,7 @@
 import { FaCheck, FaArrowRight } from "react-icons/fa";
-import Tab1 from "../../../Asset/Image/tab_img1.png";
-import Tab2 from "../../../Asset/Image/tab_img2.png";
-import Tab3 from "../../../Asset/Image/tab_img3.png";
+import Tab1 from "../../../Asset/Image/tab_img1.webp";
+import Tab2 from "../../../Asset/Image/tab_img2.webp";
+import Tab3 from "../../../Asset/Image/tab_img3.webp";
 
 export const ServiceSectionContentArrayOne = {
   image: Tab1,
