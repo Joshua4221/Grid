@@ -8,8 +8,10 @@ const HomeServiceSection = ({ theme }) => {
   return (
     <HomeServiceDiv color={theme}>
       <div className={"HomeServiceHeader"}>
-        <h2>Services We Provide</h2>
-        <p>
+        <h2 data-aos="fade-down" data-aos-duration="3000">
+          Services We Provide
+        </h2>
+        <p data-aos="fade-right" data-aos-duration="3000">
           Credibly grow premier ideas rather than bricks-and-clicks strategic
           theme areas distributed for stand-alone web-readiness.
         </p>

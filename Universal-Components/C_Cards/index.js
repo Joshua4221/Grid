@@ -6,7 +6,13 @@ const CCards = ({ ccardArray, theme, about }) => {
   return (
     <CCardDiv color={theme} about={about}>
       {ccardArray.map((item, key) => (
-        <div key={key} className={"ccardbody"}>
+        <div
+          key={key}
+          className={"ccardbody"}
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="3000"
+        >
           {item.icon && (
             <div className={"ccardIconbody"}>
               <item.icon className={"ccardIcon"} />

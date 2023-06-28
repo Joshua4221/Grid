@@ -25,6 +25,15 @@ export const HomeDiv = styled.div`
         @media screen and (max-width: 950px) {
           font-size: 60px;
         }
+
+        @media screen and (max-width: 750px) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size: 32px;
+        }
       }
 
       p {

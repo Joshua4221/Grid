@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../lib/GlobalStyle/globalstyle";
 import { theme } from "../lib/theme";
@@ -8,6 +8,8 @@ import { FooterArray } from "../Util/Footer";
 import Nav from "../Universal-Components/Nav";
 import { NavArray } from "../Util/Nav";
 import Home from ".";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 function MyApp({ Component, pageProps }) {
   const [state, setState] = useState(false);
@@ -17,6 +19,11 @@ function MyApp({ Component, pageProps }) {
   const HandleThemeProvider = () => {
     setState(!state);
   };
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <ThemeProvider theme={current}>

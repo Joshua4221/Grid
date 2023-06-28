@@ -20,14 +20,16 @@ const HomePage = ({ theme }) => {
     <HomeDiv color={theme}>
       <div className="heroSection">
         <div className={"heroSectionDetails"}>
-          <h3>We Care About any IT Solution</h3>
-          <p>
+          <h3 data-aos="zoom-in" data-aos-duration="3000">
+            We Care About any IT Solution
+          </h3>
+          <p data-aos="fade-up" data-aos-duration="3000">
             Proactively coordinate quality quality vectors vis-a-vis supply
             chains. Quickly engage client-centric web services.
           </p>
         </div>
         <div className={"heroSectionGraphics"}>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="3000">
             <Image
               src={HeroImage}
               alt={""}

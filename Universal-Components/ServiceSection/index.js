@@ -38,12 +38,22 @@ const ServiceSection = ({
   return (
     <ServiceSectionDiv color={theme}>
       <div className={"serviceSectionOne"}>
-        <h2>We Build any Kind of Technology</h2>
-        <p className={"ServiceDetails"}>
+        <h2 data-aos="fade-down" data-aos-duration="3000">
+          We Build any Kind of Technology
+        </h2>
+        <p
+          className={"ServiceDetails"}
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           Credibly grow premier ideas rather than bricks-and-clicks strategic
           theme areas distributed for stand-alone web-readiness.
         </p>
-        <div className={"SectionOneServices"}>
+        <div
+          className={"SectionOneServices"}
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {ServiceSectionArray?.map((item, key) => (
             <div
               key={key}
@@ -63,7 +73,11 @@ const ServiceSection = ({
         </div>
       </div>
       <div className={"serviceSectionTwo"}>
-        <div className={"ServiceTwoSectionOne"}>
+        <div
+          className={"ServiceTwoSectionOne"}
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <Image
             src={sectionBody.image}
             alt={"section body"}
@@ -74,7 +88,11 @@ const ServiceSection = ({
             objectFit="cover"
           />
         </div>
-        <div className={"ServiceTwoSectionTwo"}>
+        <div
+          className={"ServiceTwoSectionTwo"}
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           <h2>{sectionBody?.header}</h2>
           <p>{sectionBody?.paragraph}</p>
           <div className={"ServiceTwoSectionContent"}>

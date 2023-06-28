@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const TechnologiesDiv = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
   padding: 20px 30px;
 
   .card {
