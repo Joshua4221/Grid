@@ -37,7 +37,8 @@ export const NavDiv = styled.div`
           font-weight: 700;
           line-height: 1.5rem;
           font-size: 20px;
-          color: ${({ color }) => color.PrimColor};
+          color: ${({ color, component }) =>
+            component === "home" ? color.PrimColor : color.MajorColor};
           cursor: pointer;
         }
       }

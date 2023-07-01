@@ -17,6 +17,7 @@ const AboutProfile = ({ aboutArray, theme }) => {
                 placeholder={"blur"}
                 blurDataURL
                 priority
+                layout={"responsive"}
                 objectFit={"cover"}
                 className={"aboutprofileImage"}
               />

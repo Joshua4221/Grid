@@ -15,10 +15,18 @@ export const AboutProfileDiv = styled.div`
     .aboutprofileImagebody {
       width: 280px;
       height: 320px;
+      overflow: hidden;
       border-radius: 10px;
 
       .aboutprofileImage {
+        /* width: 100%;
+        height: 100%; */
+        transition: all 1s linear;
         border-radius: 10px;
+
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
       }
 
       &:hover {
