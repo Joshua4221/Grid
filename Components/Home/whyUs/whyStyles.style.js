@@ -108,12 +108,21 @@ export const WhyDiv = styled.div`
                 font-weight: 400;
                 color: ${({ color }) => color.PrimaryColor};
               }
+
+              /* @media screen and (max-width: 769px) {
+              display: flex;
+              justify-content: center;
+            } */
             }
 
             @media screen and (max-width: 769px) {
               display: flex;
               justify-content: center;
             }
+          }
+
+          @media screen and (max-width: 769px) {
+            padding: 0px 30px;
           }
         }
 
