@@ -89,9 +89,9 @@ const ServiceSection = ({
           />
         </div>
         <div
-          className={"ServiceTwoSectionTwo"}
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-duration="3000"
+          className={"ServiceTwoSectionTwo"}
         >
           <h2>{sectionBody?.header}</h2>
           <p>{sectionBody?.paragraph}</p>

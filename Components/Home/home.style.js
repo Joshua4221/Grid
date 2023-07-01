@@ -43,6 +43,10 @@ export const HomeDiv = styled.div`
         opacity: 0.7;
         padding: 20px 0px;
         color: ${({ color }) => color.HeroGeneral};
+
+        @media screen and (max-width: 750px) {
+          font-size: 18px;
+        }
       }
 
       @media screen and (max-width: 950px) {
@@ -85,6 +89,10 @@ export const HomeDiv = styled.div`
         font-size: 2.5rem;
         font-weight: 700;
         padding: 10px 0px;
+
+        @media screen and (max-width: 950px) {
+          font-size: 2rem;
+        }
       }
     }
   }

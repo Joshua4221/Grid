@@ -12,9 +12,9 @@ export const NavDiv = styled.div`
   position: absolute;
   /* border: 1px solid #fff; */
   background-color: ${({ color, component }) =>
-    component === "home" && color.HeroGeneral};
+    component === "home" && "#E8EFFE"};
   box-shadow: ${({ component }) =>
-    component === "home" && "0px 0px 8px 4px #00000063"};
+    component === "home" && "0px 0px 8px 4px #0000000E"};
   position: ${({ component }) => component === "home" && "fixed"};
 
   .firstLayoutBody {
@@ -37,6 +37,7 @@ export const NavDiv = styled.div`
           font-weight: 700;
           line-height: 1.5rem;
           font-size: 20px;
+          color: ${({ color }) => color.PrimColor};
           cursor: pointer;
         }
       }
@@ -64,6 +65,7 @@ export const NavDiv = styled.div`
 
     .thirdLayoutBodyicon {
       .thirdLayoutClassicon {
+        cursor: pointer;
         .thirdLayoutItemicon {
           font-size: 32px;
         }

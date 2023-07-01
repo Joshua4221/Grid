@@ -1,7 +1,7 @@
-import Lottie from "lottie-react";
-import manWorking from "../../../Asset/lottie/man-working.json";
 import { WhyDiv } from "./whyStyles.style";
 import { withTheme } from "styled-components";
+import Image from "next/image";
+import WorkImage from "../.././../Asset/Image/—Pngtree—modern.png";
 
 const WhyUsSection = ({ theme }) => {
   return (
@@ -33,9 +33,14 @@ const WhyUsSection = ({ theme }) => {
             data-aos="fade-right"
             data-aos-duration="3000"
           >
-            <Lottie
-              animationData={manWorking}
-              loop
+            <Image
+              src={WorkImage}
+              alt="image"
+              placeholder="blur"
+              priority
+              blurDataURL
+              layout={"responsive"}
+              objectFit="cover"
               className="whyus__bottom__left__image"
             />
           </div>
